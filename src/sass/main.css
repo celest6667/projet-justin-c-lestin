@@ -267,3 +267,147 @@ a {
 .pied-de-page__lien:focus-visible {
   color: var(--color-bg);
 }
+
+fil-ariane {
+  max-width: var(--max-width);
+  margin: 2rem auto 0 auto;
+  padding: 0 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+.fil-ariane a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+
+.fiche-film {
+  padding: 4rem 1.5rem 8rem;
+  background-color: var(--color-bg);
+}
+.fiche-film__contenu {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.fiche-film__image {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.fiche-film__texte {
+  flex: 1;
+  min-width: 280px;
+}
+.fiche-film__titre {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+.fiche-film__infos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.fiche-film__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.bouton-retour {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  font-family: var(--font-title);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+
+@media (max-width: 1024px) {
+  .fiche-film__contenu {
+    gap: 2rem;
+  }
+
+  .fiche-film__titre {
+    font-size: 2.5rem;
+  }
+
+  .fiche-film__image {
+    width: 250px;
+  }
+
+  .fiche-film__description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fiche-film__contenu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .fiche-film__image {
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .fiche-film__texte {
+    min-width: auto;
+  }
+
+  .fiche-film__titre {
+    font-size: 2.2rem;
+  }
+
+  .fiche-film__infos {
+    justify-content: center;
+  }
+
+  .fiche-film__description {
+    max-width: 90%;
+    margin: 0 auto 2rem auto;
+  }
+
+  .bouton-retour {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .fiche-film {
+    padding: 3rem 1rem 6rem;
+  }
+
+  .fiche-film__titre {
+    font-size: 1.8rem;
+  }
+
+  .fiche-film__image {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .fiche-film__description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .bouton-retour {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .fil-ariane {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
